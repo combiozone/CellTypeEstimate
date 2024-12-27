@@ -1,5 +1,5 @@
 # Hua Sun
-# v1.1
+# v0.2
 
 
 library(Seurat)
