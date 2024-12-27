@@ -8,7 +8,7 @@ Cell type annotation tool for single cell data
 
 Developer: Hua Sun
 
-Version: v1.1
+Version: v0.2
 ```
 
 Description
@@ -40,6 +40,10 @@ Rscript cte4so.R --rds scrna.rds --db hsFB --assay SCT --outdir out_celltype
 ```
 > output: cluster_cellType.xls, metaData.cellType.xls
 
+```
+Rscript cte4so.R --rds scrna.rds --db hsFB --assay SCT --outdir out_celltype --plot
+```
+> output: cluster_cellType.xls, metaData.cellType.xls, ...umap.pdf
 
 * Save cell type to seurat object
 ```
