@@ -29,6 +29,10 @@ Seurat 4/5
 dplyr
 HGNChelper
 readxl
+dplyr
+this.path
+GetoptLong
+ggplot2
 ```
 
 
