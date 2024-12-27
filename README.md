@@ -1,19 +1,19 @@
 
 
 
-CellTypeEstimate (CTE)
+Cell Type Estimate For Seurat Object (CTE4SO)
 =======================
 ```
 Cell type annotation tool for single cell data
 
 Developer: Hua Sun
 
-Version: v1.0
+Version: v1.1
 ```
 
 Description
 ----------------------
-The CellTypeEstimate (CTE) is a cell type annotation tool developed based on ScType (Ianevski et al., Nat Commun 2022). It was built for 10xMultiome project and specifically solve brain tissue annotation. Its characteristics are simplicity, convenience, ease of use and strong scalability. It is suitable for directly using Seurat4/5 objects for cell type annotation of scRNA/snRNA/snMultiome data. Currently contains a limited set of brain markers. It will continue to be upgraded as needed in the future.
+The CTE4SO is a cell type annotation tool developed based on ScType (Ianevski et al., Nat Commun 2022). It was built for 10xMultiome project and specifically solve brain tissue annotation. Its characteristics are simplicity, convenience, ease of use and strong scalability. It is suitable for directly using Seurat4/5 objects for cell type annotation of scRNA/snRNA/snMultiome data. Currently contains a limited set of brain markers. It will continue to be upgraded as needed in the future.
 
 * [ Notice ]
 
@@ -36,32 +36,38 @@ Usage
 ----------------------
 * Test
 ```
-Rscript cte.R --rds scrna.rds --db hsFB --assay SCT --outdir out_celltype
+Rscript cte4so.R --rds scrna.rds --db hsFB --assay SCT --outdir out_celltype
 ```
 > output: cluster_cellType.xls, metaData.cellType.xls
 
 
 * Save cell type to seurat object
 ```
-Rscript cte.R --rds scrna.rds --db hsFB --assay SCT --outdir out_celltype --save
+Rscript cte4so.R --rds scrna.rds --db hsFB --assay SCT --outdir out_celltype --save
 ```
 > output: cluster_cellType.xls, metaData.cellType.xls, sc_celltype_anno.rds
 
 
 ### Parameter
 ```
---tissue    Brain (default)              
---ver       v3 (default)               # version of cell type marker set
---db        hsFB  (Human Forebrain)    # normal data annotation
-            hsHD  (Human Hindbrain)    # normal data annotation
-            mmFB  (Mouse Forebrain)    # normal/tumor data annotation
-            hsFB.T  (Human Forebrain)  # tumor data annotation (includes markers collected from tumor data)
-            hsHD.T  (Human Hindbrain)  # tumor data annotation (includes markers collected from tumor data)
+--tissue    'Brain'                      # Tissue name. Default: 'Brain'
+--ver       'v3'                         # Version of cell type marker set. Default: 'v3'
+--db        'hsFB'  (Human Forebrain)    # Normal data annotation
+            'hsHD'  (Human Hindbrain)    # Normal data annotation
+            'mmFB'  (Mouse Forebrain)    # Normal/tumor data annotation
+            'hsFB.T'  (Human Forebrain)  # Tumor data annotation (includes markers collected from tumor data)
+            'hsHD.T'  (Human Hindbrain)  # Tumor data annotation (includes markers collected from tumor data)
 
---rds       seurat.rds                 # seurat object file (.rds)
---assay     SCT (default)              # Seurat assay type. RNA/SCT
---save                                 # save annotated rds or not
---outdir    out_celltype (default)     # output directory
+--rds       ''                           # seurat object file (.rds)
+--assay     'SCT'                        # Seurat assay type. RNA/SCT(Default)
+
+--plot                                   # Plot UMAP
+--title      ''                          # Title in plot. Default:''
+--reduction  'umap'                      # Reduction in plot. Default:'umap'
+--groupby    'cell_type2'                # Group by in plot. Default:'cell_type2'
+
+--save                                   # save annotated rds or not
+--outdir    out_celltype (default)       # output directory
 ```
 
 ### Marker set version
