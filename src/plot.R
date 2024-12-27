@@ -3,9 +3,6 @@
 
 library(Seurat)
 library(ggplot2)
-library(ggpubr)
-library(RColorBrewer)
-
 
 
 
