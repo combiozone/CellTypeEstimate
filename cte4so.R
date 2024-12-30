@@ -4,6 +4,7 @@
 
 library(Seurat)
 library(dplyr)
+library(stringr)
 library(this.path)
 library(GetoptLong)
 
