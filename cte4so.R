@@ -91,7 +91,10 @@ if (save){
 
 # plot
 if (plot){
-    CustomizedPlotUMAP(obj=seu, title=title, reduction=reduction, group_by=groupby, label=TRUE, outdir=outdir)
+    groupset <- str_split(groupby, ',')[[1]]
+    for (group in groupset){
+        CustomizedPlotUMAP(obj=seu, title=title, reduction=reduction, group_by=group, label=TRUE, outdir=outdir)
+    }
 }
 
 
