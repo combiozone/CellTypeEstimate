@@ -86,7 +86,7 @@ https://github.com/hsun9/CellTypeEstimate/tree/0.1
 
 Cite
 ----------------------
-If you use this tool or the cell type marker set in your research/analysis, please cite `github.com/hsun9/CellTypeEstimate`
+If you use this tool or the cell type marker set in your research/analysis, please cite `github.com/combiozone/CellTypeEstimate`
 
 
 The first manuscript using this tool
