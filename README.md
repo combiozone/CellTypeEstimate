@@ -59,7 +59,6 @@ Rscript cte4so.R --rds scrna.rds --db hsFB --assay SCT --outdir out_celltype --s
 ### Parameter
 ```
 --tissue    'Brain'                      # Tissue name. Default: 'Brain'
---ver       'v3'                         # Version of cell type marker set. Default: 'v3'
 --db        'hsFB'  (Human Forebrain)    # Normal data annotation
             'hsHD'  (Human Hindbrain)    # Normal data annotation
             'mmFB'  (Mouse Forebrain)    # Normal/tumor data annotation
@@ -72,15 +71,16 @@ Rscript cte4so.R --rds scrna.rds --db hsFB --assay SCT --outdir out_celltype --s
 --plot                                   # Plot UMAP
 --title      ''                          # Title in plot. Default:''
 --reduction  'umap'                      # Reduction in plot. Default:'umap'
---groupby    'cell_type2'                # Group by in plot. Default:'cell_type2'
+--groupby    'cell_type2'                # Group by in plot. Default:'seurat_clusters,cell_type,cell_type2'
 
 --save                                   # save annotated rds or not
 --outdir    out_celltype (default)       # output directory
 ```
 
-### Marker set version
+### Previous version
 ```
-v3 (default): These markers match the August 15, 2024 bioRxiv preprint
+v0.1: These marker sets correspond to the bioRxiv preprint published on August 15, 2024.
+https://github.com/hsun9/CellTypeEstimate/tree/0.1
 ```
 
 

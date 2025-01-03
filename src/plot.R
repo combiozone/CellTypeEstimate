@@ -6,6 +6,7 @@ library(ggplot2)
 
 
 
+
 CustomizedPlotUMAP <- function(obj=NULL, title='', reduction='umap', group_by='cell_type2', axislab='UMAP', label=FALSE, outdir='.')
 {
     p <- DimPlot(obj, reduction=reduction, group.by=group_by, label.size = 3, label=label, pt.size=0.05, repel=TRUE) 
