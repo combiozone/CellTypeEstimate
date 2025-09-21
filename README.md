@@ -87,7 +87,7 @@ If you use this tool or the cell type marker set in your research/analysis, plea
 
 Contact
 ----------------------
-Hua Sun, <hua.sun@stjude.org> | <hua.sun229@gmail.com> ; Stephen Mack (PI), <stephen.mack@stjude.org> 
+Hua Sun, <hua.sun@stjude.org> | <hua.sun229@gmail.com>
 
 
 
