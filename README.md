@@ -85,10 +85,6 @@ Cite
 If you use this tool or the cell type marker set in your research/analysis, please cite `github.com/combiozone/CellTypeEstimate`
 
 
-Contact
-----------------------
-Hua Sun, <hua.sun@stjude.org> | <hua.sun229@gmail.com>
-
 
 
 
