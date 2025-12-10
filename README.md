@@ -44,6 +44,7 @@ Usage
 --tissue    'Brain'                    # Tissue name. Default: 'Brain'
 --db        'hs.brain'                 # Normal/Tumor data annotation
             'mm.brain'                 # Normal/Tumor data annotation
+            'sctype.brain'             # ScType marker set for brain
 --rds       ''                         # seurat object file (.rds)
 --assay     'SCT'                      # Seurat assay type. RNA/SCT(Default)
 
