@@ -42,18 +42,20 @@ Usage
 ### Parameter
 ```
 --tissue    'Brain'                    # Tissue name. Default: 'Brain'
---db        'hs.brain'                 # human brain cell type annotation
-            'mm.brain.v2'              # mouse brain cell type annotation
+--db        'hs.brain'                 # Human brain cell type annotation
+            'mm.brain.v2'              # Mouse brain cell type annotation
             'sctype.beta'              # Beta marker set for cell type annotation
---rds       ''                         # seurat object file (.rds)
---assay     'SCT'                      # Seurat assay type. RNA/SCT(Default)
+            ...
+
+--rds       ''                         # Seurat object file (.rds)
+--assay     'SCT'                      # Seurat assay type. SCT(Default)/RNA/...
 
 --plot                                 # Plot UMAP
 --title      ''                        # Title in plot. Default:''
 --reduction  'umap'                    # Reduction in plot. Default:'umap'
 --groupby    'cell_type2'              # Group by in plot. Default:'seurat_clusters,cell_type,cell_type2'
 
---save                                 # save annotated rds or not
+--save                                 # save annotated rds
 --outdir    out_celltype (default)     # output directory
 ```
 
