@@ -42,8 +42,8 @@ Usage
 ### Parameter
 ```
 --tissue    'Brain'                    # Tissue name. Default: 'Brain'
---db        'hs.brain'                 # Normal/Tumor data annotation
-            'mm.brain.v2'              # Normal/Tumor data annotation
+--db        'hs.brain'                 # human brain cell type annotation
+            'mm.brain.v2'              # mouse brain cell type annotation
             'sctype.beta'              # Beta marker set for cell type annotation
 --rds       ''                         # seurat object file (.rds)
 --assay     'SCT'                      # Seurat assay type. RNA/SCT(Default)
