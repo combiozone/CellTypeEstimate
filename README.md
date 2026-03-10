@@ -6,7 +6,7 @@ Cell Type Estimate For Seurat Object (CTE4SO)
 ```
 Cell type annotation tool for single cell data
 
-Developer: Hua Sun
+Author and Maintainer: Hua Sun
 
 Version: v0.3.1
 ```
