@@ -13,12 +13,14 @@ Version: v0.3.1
 
 Description
 ----------------------
-The CTE4SO is a cell type annotation tool developed based on ScType (Ianevski et al., Nat Commun 2022). It was built for 10xMultiome project and specifically solve brain tissue annotation. Its characteristics are simplicity, convenience, ease of use and strong scalability. It is suitable for directly using Seurat4/5 objects for cell type annotation of scRNA/snRNA/snMultiome data. Currently contains a limited set of brain markers. It will continue to be upgraded as needed in the future.
+CTE4SO is a cell type annotation tool adapted from ScType (Ianevski et al., Nat Commun 2022). It was developed for 10x Multiome projects and designed to facilitate cell type annotation of brain tissue datasets. 
+CTE4SO is designed to be simple, convenient, and extensible. It can be used directly with Seurat 4/5 objects for cell type annotation of scRNA-seq, snRNA-seq, and snMultiome datasets. The current version includes a limited set of brain cell type markers and will be updated as needed. 
 
-* [ Notice ]
 
-    Most cell type markers were collected from normally developing brains, with a few marker sets coming from ependymomas (tumors). If a marker was collected from tumor data, it will be labeled "-Like" and annotated in the "Region" column as coming from that tumor type. This is because these marker sets were created for analysis of healthy brains and ependymoma brain tumors. (2024-10-04)
-
+Notice
+----------------------
+The cell type markers were manually curated from published studies, and the source of each marker set is provided in the marker table.
+Most markers were collected from studies of normally developing brain tissues, with a few marker sets derived from published ependymoma tumor datasets. Tumor-derived marker sets are labeled with “-Like” and annotated in the Region column as originating from the corresponding tumor type.
 
 
 Install R packages
@@ -79,13 +81,16 @@ Rscript cte4so.R --rds scrna.rds --db hs.brain --assay SCT --outdir out_celltype
 ```
 > output: cluster_cellType.xls, metaData.cellType.xls, sc_celltype_anno.rds
 
+<br/>
 
-
-
-
-Cite
+Associated publication
 ----------------------
-If you use this tool or the cell type marker set in your research/analysis, please cite `github.com/combiozone/CellTypeEstimate`
+This tool and the brain cell type marker set were used in the following study:
+
+Kardian, A, Sun, H. et al. Dominant clones leverage developmental epigenomic states to drive ependymoma. Nature 652, 1027–1037 (2026). https://doi.org/10.1038/s41586-026-10270-8
+
+Preprint version:
+Kardian, A., Sun, H. et al. Dominant Malignant Clones Leverage Lineage Restricted Epigenomic Programs to Drive Ependymoma Development. bioRxiv (2024). https://doi.org/10.1101/2024.08.12.607603
 
 
 
